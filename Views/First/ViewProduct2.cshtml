@@ -1,0 +1,15 @@
+﻿@model ExampleMvcXtl.Models.Product
+
+@{
+    // ở đây nhớ ép kiểu dữ liệu của biến 
+    var product = ViewData["product"] as Product;
+}
+<div class="card bg-primary text-white">
+    <h1 class="card-header">Sản phẩm: @product.Name</h1>
+    <div class="card-body">
+        <p class="card-text">
+            Giá: @product.Price
+        </p>
+    </div>
+</div>
+<hr>
